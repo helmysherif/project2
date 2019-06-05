@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Inventory</title>
+    <link rel="icon" href="carfairimages/carfair.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/inventory.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.funnyText.css" />
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/owl.carousel.css">
+    <link href="css/pagination.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+</head>
+
+<body>
+
+    <body>
+        <!--start navbar-->
+        <div class="header">
+            <div class="top-header">
+                <div class="container cont">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-12">
+                            <h1>motors</h1>
+                            <div class="login">
+                                <div>
+                                    <i class="fas fa-user-alt"></i>
+                                    <a href="login.html" style="padding-right: 10px;">login</a>
+                                </div>
+                                <a href="SignUp.html" style="padding-top:5px">register</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="caption3">
+                                <i class="fas fa-phone"></i>
+                                <div class="text1">
+                                    <span>0789 256 321</span>
+                                    <span>info@example.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="caption3">
+                                <i class="fas fa-home"></i>
+                                <div class="text1">
+                                    <span style="font-weight:600">Street 238,52 tempor</span>
+                                    <span>Donec ultricies mattis</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="social">
+                                <i class="fab fa-facebook-f" style="background:#3b5998;padding-left:15px;padding-right:15px"></i>
+                                <i class="fab fa-twitter" style="background:#55acee"></i>
+                                <i class="fab fa-google-plus-g" style="background:#dc4e41"></i>
+                                <i class="fab fa-linkedin-in" style="background:#0077b5"></i>
+                                <i class="fab fa-pinterest" style="background:#bd081c"></i>
+                                <i class="fab fa-skype" style="background:#00aff0"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-header">
+                <div class="container cont1">
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <nav class="navbar navbar-expand-lg navbar-light">
+
+
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="carFair.html">Home
+                                                <span class="sr-only">(current)</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="inventory.html">inventory</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="aboutUs.html">about us</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">pages</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">blog</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">shop</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="contactUs.html">contact</a>
+                                        </li>
+                                    </ul>
+                                    <form class="form-inline">
+                                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                        <a href="#">
+                                            <i class="fas fa-search"></i>
+                                        </a>
+                                    </form>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content1">
+            <div class="container-fluid cont1">
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12" style="padding:0">
+                        <h1>find your perfect car match</h1>
+                        <p>BROWSE OUR EXTENSIVE CAR LISTING CATALOGUE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content2">
+            <div class="container cont2">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-12">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">MAKE</label>
+                                <input list="browsers" name="browser" placeholder="--All--">
+                                <datalist id="browsers">
+                                    <option value="Acura">
+                                        <option value="BMW">
+                                            <option value="Chevrolet">
+                                                <option value="Ford">
+                                                    <option value="Honda">
+                                                        <option value="Hyundai">
+                                                            <option value="Kia">
+                                                                <option value="Mercedes-Benz">
+                                                                    <option value="Nissan">
+                                                                        <option value="Toyata">
+                                </datalist>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-3 col-sm-12">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">model</label>
+                                <input list="browsers" name="browser" placeholder="--All--">
+                                <datalist id="browsers">
+                                    <option value="Model">
+                                        <option value="5-series">
+                                            <option value="Altima">
+                                                <option value="C Class">
+                                                    <option value="Camry">
+                                                        <option value="Civic">
+                                                            <option value="Cruze">
+                                                                <option value="Elantra">
+                                                                    <option value="RDX">
+                                                                        <option value="Versa">
+                                </datalist>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-3 col-sm-12">
+                        <div class="range">
+                            <label>Price Range: $2,000 - $80,000</label>
+                            <form oninput="x.value=parseInt(a.value)">
+                                <input type="range" id="a" name="a" min="2000" max="80000" value="0" style="width:100%">
+                                <div class="row">
+                                    <div class="col-lg-6 col-sm-12">
+                                        <div class="range2">
+                                            <output name="x" for="a a">2000</output>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12">
+                                        <div class="range2">
+                                            <span class="span2" style="float: right">80000</span>
+                                        </div>
+                                        <br>
+                                        <br>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-12">
+                        <button class="btn btn-primary">search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content3">
+            <h2>featured cars</h2>
+            <div class="container cont3">
+                <div class="first-page">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="image2">
+                                <img src="carfairimages/car 44.jpg">
+                                <div class="product-details">
+                                    <ul class="list-product">
+                                        <li>2015</li>
+                                        <li class="separator">, </li>
+                                        <li>80 km</li>
+                                        <li class="separator">, </li>
+                                        <li>Petrol</li>
+                                        <li class="separator">, </li>
+                                        <li>230 hp</li>
+                                        <li class="separator">, </li>
+                                        <li style="padding-left: 65px">2300.0 cc</li>
+                                    </ul>
+                                    <div class="button">
+                                        <button class="btn btn-primary">view details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name2">
+                                <p>bmw 535i , navi , leather ABS</p>
+                                <span>$45 000</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="image2">
+                                <img src="carfairimages/car 45.jpg">
+                                <div class="product-details">
+                                    <ul class="list-product">
+                                        <li>2016</li>
+                                        <li class="separator">, </li>
+                                        <li>80 km</li>
+                                        <li class="separator">, </li>
+                                        <li>Hybrid</li>
+                                        <li class="separator">, </li>
+                                        <li>230 hp</li>
+                                        <li class="separator">, </li>
+                                        <li style="padding-left: 65px">2300.0 cc</li>
+                                    </ul>
+                                    <div class="button">
+                                        <button class="btn btn-primary">view details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name2">
+                                <p>toyota camry XSE 2016</p>
+                                <span>$45 000</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="image2">
+                                <img src="carfairimages/car 46.jpg">
+                                <div class="product-details">
+                                    <ul class="list-product">
+                                        <li>2015</li>
+                                        <li class="separator">, </li>
+                                        <li>80 km</li>
+                                        <li class="separator">, </li>
+                                        <li>Autogas</li>
+                                        <li class="separator">, </li>
+                                        <li>230 hp</li>
+                                        <li class="separator">, </li>
+                                        <li style="padding-left: 65px">2300.0 cc</li>
+                                    </ul>
+                                    <div class="button">
+                                        <button class="btn btn-primary">view details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name2">
+                                <p>kia soul, brand new model</p>
+                                <span>$25 000</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="image2">
+                                <img src="carfairimages/car 47.jpg">
+                                <div class="product-details">
+                                    <ul class="list-product">
+                                        <li>2015</li>
+                                        <li class="separator">, </li>
+                                        <li>100 km</li>
+                                        <li class="separator">, </li>
+                                        <li>Gasoline</li>
+                                        <li class="separator">, </li>
+                                        <li>230 hp</li>
+                                        <li class="separator">, </li>
+                                        <li style="padding-left: 65px">2300.0 cc</li>
+                                    </ul>
+                                    <div class="button">
+                                        <button class="btn btn-primary">view details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name2">
+                                <p>hyundai veloster turbo sport</p>
+                                <span>$22 000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="image2">
+                                <img src="carfairimages/car 48.jpg">
+                                <div class="product-details">
+                                    <ul class="list-product">
+                                        <li>2015</li>
+                                        <li class="separator">, </li>
+                                        <li>80 km</li>
+                                        <li class="separator">, </li>
+                                        <li>Gasoline</li>
+                                        <li class="separator">, </li>
+                                        <li>230 hp</li>
+                                        <li class="separator">, </li>
+                                        <li style="padding-left: 65px">2300.0 cc</li>
+                                    </ul>
+                                    <div class="button">
+                                        <button class="btn btn-primary">view details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name2">
+                                <p>hyundai elantra 2016 new model</p>
+                                <span>$25 000</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="image2">
+                                <img src="carfairimages/car 49.jpg">
+                                <div class="product-details">
+                                    <ul class="list-product">
+                                        <li>2016</li>
+                                        <li class="separator">, </li>
+                                        <li>80 km</li>
+                                        <li class="separator">, </li>
+                                        <li>Hybrid</li>
+                                        <li class="separator">, </li>
+                                        <li>230 hp</li>
+                                        <li class="separator">, </li>
+                                        <li style="padding-left: 65px">2300.0 cc</li>
+                                    </ul>
+                                    <div class="button">
+                                        <button class="btn btn-primary">view details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name2">
+                                <p>honda civic sedan 2016</p>
+                                <span>$15 000</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="image2">
+                                <img src="carfairimages/car 50.jpg" style="height:161px">
+                                <div class="product-details">
+                                    <ul class="list-product">
+                                        <li>2015</li>
+                                        <li class="separator">, </li>
+                                        <li>80 km</li>
+                                        <li class="separator">, </li>
+                                        <li>Gasoline</li>
+                                        <li class="separator">, </li>
+                                        <li>230 hp</li>
+                                        <li class="separator">, </li>
+                                        <li style="padding-left: 65px">2300.0 cc</li>
+                                    </ul>
+                                    <div class="button">
+                                        <button class="btn btn-primary">view details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name2">
+                                <p>ford mustang 2016 turbo</p>
+                                <span>$29 000</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="image2">
+                                <img src="carfairimages/car 51.jpg">
+                                <div class="product-details">
+                                    <ul class="list-product">
+                                        <li>2015</li>
+                                        <li class="separator">, </li>
+                                        <li>80 km</li>
+                                        <li class="separator">, </li>
+                                        <li>Diesel</li>
+                                        <li class="separator">, </li>
+                                        <li>230 hp</li>
+                                        <li class="separator">, </li>
+                                        <li style="padding-left: 65px">2300.0 cc</li>
+                                    </ul>
+                                    <div class="button">
+                                        <button class="btn btn-primary">view details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name2">
+                                <p>acura RDX 2015 SE</p>
+                                <span>$59 000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="image2">
+                                <img src="carfairimages/car 52.jpg">
+                                <div class="product-details">
+                                    <ul class="list-product">
+                                        <li>2015</li>
+                                        <li class="separator">, </li>
+                                        <li>50 km</li>
+                                        <li class="separator">, </li>
+                                        <li>Hybrid</li>
+                                        <li class="separator">, </li>
+                                        <li>230 hp</li>
+                                        <li class="separator">, </li>
+                                        <li style="padding-left: 65px">2300.0 cc</li>
+                                    </ul>
+                                    <div class="button">
+                                        <button class="btn btn-primary">view details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name2">
+                                <p>chevrolet malibu 2016 LT</p>
+                                <span>$27 000</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="image2">
+                                <img src="carfairimages/car 53.jpg">
+                                <div class="product-details">
+                                    <ul class="list-product">
+                                        <li>2015</li>
+                                        <li class="separator">, </li>
+                                        <li>180 km</li>
+                                        <li class="separator">, </li>
+                                        <li>Hybrid</li>
+                                        <li class="separator">, </li>
+                                        <li>230 hp</li>
+                                        <li class="separator">, </li>
+                                        <li style="padding-left: 65px">2300.0 cc</li>
+                                    </ul>
+                                    <div class="button">
+                                        <button class="btn btn-primary">view details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name2">
+                                <p>chevrolet cruze 2016 LX, LEATHER, SUNROOF</p>
+                                <span>$25 000</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="image2">
+                                <img src="carfairimages/car 54.jpg">
+                                <div class="product-details">
+                                    <ul class="list-product">
+                                        <li>2015</li>
+                                        <li class="separator">, </li>
+                                        <li>80 km</li>
+                                        <li class="separator">, </li>
+                                        <li>Gasoline</li>
+                                        <li class="separator">, </li>
+                                        <li>230 hp</li>
+                                        <li class="separator">, </li>
+                                        <li style="padding-left: 65px">2300.0 cc</li>
+                                    </ul>
+                                    <div class="button">
+                                        <button class="btn btn-primary">view details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name2">
+                                <p>nissan versa, LEATHER, SUNROOF, NAVIGATION</p>
+                                <span>$15 000</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="image2">
+                                <img src="carfairimages/car 55.jpg">
+                                <div class="product-details">
+                                    <ul class="list-product">
+                                        <li>2015</li>
+                                        <li class="separator">, </li>
+                                        <li>100 km</li>
+                                        <li class="separator">, </li>
+                                        <li>Gasoline</li>
+                                        <li class="separator">, </li>
+                                        <li>230 hp</li>
+                                        <li class="separator">, </li>
+                                        <li style="padding-left: 65px">2300.0 cc</li>
+                                    </ul>
+                                    <div class="button">
+                                        <button class="btn btn-primary">view details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name2">
+                                <p>nissan altima 2.5 SL, LEATHER, SUNROOF</p>
+                                <span>$45 000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="second-page" style="display: none">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="image2">
+                                <img src="carfairimages/car29.jpg">
+                                <div class="product-details">
+                                    <ul class="list-product">
+                                        <li>2004</li>
+                                        <li class="separator">, </li>
+                                        <li>80 km</li>
+                                        <li class="separator">, </li>
+                                        <li>Petrol</li>
+                                        <li class="separator">, </li>
+                                        <li>230 hp</li>
+                                        <li class="separator">, </li>
+                                        <li style="padding-left: 65px">2300.0 cc</li>
+                                    </ul>
+                                    <div class="button">
+                                        <button class="btn btn-primary">view details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name2">
+                                <p>Toyota Yaris</p>
+                                <span>$20 000</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="image2">
+                                <img src="carfairimages/car30.jpg">
+                                <div class="product-details">
+                                    <ul class="list-product">
+                                        <li>2013</li>
+                                        <li class="separator">, </li>
+                                        <li>80 km</li>
+                                        <li class="separator">, </li>
+                                        <li>Hybrid</li>
+                                        <li class="separator">, </li>
+                                        <li>230 hp</li>
+                                        <li class="separator">, </li>
+                                        <li style="padding-left: 65px">2300.0 cc</li>
+                                    </ul>
+                                    <div class="button">
+                                        <button class="btn btn-primary">view details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name2">
+                                <p>Seat toledo 1.6 tdi se</p>
+                                <span>$18 000</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="image2">
+                                <img src="carfairimages/car31.jpg">
+                                <div class="product-details">
+                                    <ul class="list-product">
+                                        <li>2000</li>
+                                        <li class="separator">, </li>
+                                        <li>16 km</li>
+                                        <li class="separator">, </li>
+                                        <li>Autogas</li>
+                                        <li class="separator">, </li>
+                                        <li>230 hp</li>
+                                        <li class="separator">, </li>
+                                        <li style="padding-left: 65px">2300.0 cc</li>
+                                    </ul>
+                                    <div class="button">
+                                        <button class="btn btn-primary">view details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name2">
+                                <p>bentley azure unclassifild</p>
+                                <span>$60 000</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="image2">
+                                <img src="carfairimages/car32.jpg">
+                                <div class="product-details">
+                                    <ul class="list-product">
+                                        <li>2011</li>
+                                        <li class="separator">, </li>
+                                        <li>100 km</li>
+                                        <li class="separator">, </li>
+                                        <li>Diesel</li>
+                                        <li class="separator">, </li>
+                                        <li>230 hp</li>
+                                        <li class="separator">, </li>
+                                        <li style="padding-left: 65px">2300.0 cc</li>
+                                    </ul>
+                                    <div class="button">
+                                        <button class="btn btn-primary">view details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name2">
+                                <p>renault megane</p>
+                                <span>$13 000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="image2">
+                                <img src="carfairimages/car33.jpg">
+                                <div class="product-details">
+                                    <ul class="list-product">
+                                        <li>2015</li>
+                                        <li class="separator">, </li>
+                                        <li>80 km</li>
+                                        <li class="separator">, </li>
+                                        <li>Gasoline</li>
+                                        <li class="separator">, </li>
+                                        <li>230 hp</li>
+                                        <li class="separator">, </li>
+                                        <li style="padding-left: 65px">2300.0 cc</li>
+                                    </ul>
+                                    <div class="button">
+                                        <button class="btn btn-primary">view details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name2">
+                                <p>volkswagen touareg V6 tdi se tip</p>
+                                <span>$28 000</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="image2">
+                                <img src="carfairimages/car34.jpg">
+                                <div class="product-details">
+                                    <ul class="list-product">
+                                        <li>2016</li>
+                                        <li class="separator">, </li>
+                                        <li>80 km</li>
+                                        <li class="separator">, </li>
+                                        <li>Hybrid</li>
+                                        <li class="separator">, </li>
+                                        <li>230 hp</li>
+                                        <li class="separator">, </li>
+                                        <li style="padding-left: 65px">2300.0 cc</li>
+                                    </ul>
+                                    <div class="button">
+                                        <button class="btn btn-primary">view details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name2">
+                                <p>BMW 3 series coupe 335I se 2DR auto</p>
+                                <span>$20 000</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="image2">
+                                <img src="carfairimages/car35.jpg" style="height:161px">
+                                <div class="product-details">
+                                    <ul class="list-product">
+                                        <li>2008</li>
+                                        <li class="separator">, </li>
+                                        <li>80 km</li>
+                                        <li class="separator">, </li>
+                                        <li>Gasoline</li>
+                                        <li class="separator">, </li>
+                                        <li>230 hp</li>
+                                        <li class="separator">, </li>
+                                        <li style="padding-left: 65px">2300.0 cc</li>
+                                    </ul>
+                                    <div class="button">
+                                        <button class="btn btn-primary">view details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name2">
+                                <p>nissan quashqai tekna</p>
+                                <span>$8 000</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="image2">
+                                <img src="carfairimages/car36.jpg">
+                                <div class="product-details">
+                                    <ul class="list-product">
+                                        <li>2013</li>
+                                        <li class="separator">, </li>
+                                        <li>80 km</li>
+                                        <li class="separator">, </li>
+                                        <li>Diesel</li>
+                                        <li class="separator">, </li>
+                                        <li>230 hp</li>
+                                        <li class="separator">, </li>
+                                        <li style="padding-left: 65px">2300.0 cc</li>
+                                    </ul>
+                                    <div class="button">
+                                        <button class="btn btn-primary">view details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name2">
+                                <p>dacia logan</p>
+                                <span>$11 000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="image2">
+                                <img src="carfairimages/car37.jpg">
+                                <div class="product-details">
+                                    <ul class="list-product">
+                                        <li>2015</li>
+                                        <li class="separator">, </li>
+                                        <li>50 km</li>
+                                        <li class="separator">, </li>
+                                        <li>Hybrid</li>
+                                        <li class="separator">, </li>
+                                        <li>230 hp</li>
+                                        <li class="separator">, </li>
+                                        <li style="padding-left: 65px">2300.0 cc</li>
+                                    </ul>
+                                    <div class="button">
+                                        <button class="btn btn-primary">view details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name2">
+                                <p>peugot 307 1.6 s 5DR</p>
+                                <span>$10 000</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="image2">
+                                <img src="carfairimages/car38.jpg">
+                                <div class="product-details">
+                                    <ul class="list-product">
+                                        <li>2015</li>
+                                        <li class="separator">, </li>
+                                        <li>180 km</li>
+                                        <li class="separator">, </li>
+                                        <li>Hybrid</li>
+                                        <li class="separator">, </li>
+                                        <li>230 hp</li>
+                                        <li class="separator">, </li>
+                                        <li style="padding-left: 65px">2300.0 cc</li>
+                                    </ul>
+                                    <div class="button">
+                                        <button class="btn btn-primary">view details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name2">
+                                <p>ferrari california convertible</p>
+                                <span>$110 000</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="image2">
+                                <img src="carfairimages/car39.jpg">
+                                <div class="product-details">
+                                    <ul class="list-product">
+                                        <li>2015</li>
+                                        <li class="separator">, </li>
+                                        <li>80 km</li>
+                                        <li class="separator">, </li>
+                                        <li>Gasoline</li>
+                                        <li class="separator">, </li>
+                                        <li>230 hp</li>
+                                        <li class="separator">, </li>
+                                        <li style="padding-left: 65px">2300.0 cc</li>
+                                    </ul>
+                                    <div class="button">
+                                        <button class="btn btn-primary">view details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name2">
+                                <p>aston martin DB9 coupe</p>
+                                <span>$50 000</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="image2">
+                                <img src="carfairimages/car40.jpg">
+                                <div class="product-details">
+                                    <ul class="list-product">
+                                        <li>2015</li>
+                                        <li class="separator">, </li>
+                                        <li>100 km</li>
+                                        <li class="separator">, </li>
+                                        <li>Gasoline</li>
+                                        <li class="separator">, </li>
+                                        <li>230 hp</li>
+                                        <li class="separator">, </li>
+                                        <li style="padding-left: 65px">2300.0 cc</li>
+                                    </ul>
+                                    <div class="button">
+                                        <button class="btn btn-primary">view details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name2">
+                                <p>BMW X5</p>
+                                <span>$32 000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav>
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="one active">
+                            <a href="#">1</a>
+                        </li>
+                        <li class="two">
+                            <a href="#">2</a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container cont12">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-12">
+                        <h4>
+                            <span>car</span>
+                            fair
+                        </h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                            ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                            tation ullamcorper suscipit.</p>
+                        <div class="social" style="margin-top:30px;">
+                            <i class="fab fa-facebook-f" style="background:#3b5998;padding-left:15px;padding-right:15px"></i>
+                            <i class="fab fa-twitter" style="background:#55acee"></i>
+                            <i class="fab fa-google-plus-g" style="background:#dc4e41"></i>
+                            <i class="fab fa-linkedin-in" style="background:#0077b5"></i>
+                            <i class="fab fa-pinterest" style="background:#bd081c"></i>
+                            <i class="fab fa-skype" style="background:#00aff0"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12">
+                        <h4>all bages</h4>
+                        <ul class="links">
+                            <li>
+                                <a href="#">home</a>
+                            </li>
+                            <li>
+                                <a href="#">inventory</a>
+                            </li>
+                            <li>
+                                <a href="#">about us</a>
+                            </li>
+                            <li>
+                                <a href="#">pages</a>
+                            </li>
+                            <li>
+                                <a href="#">blog</a>
+                            </li>
+                            <li>
+                                <a href="#">shop</a>
+                            </li>
+                            <li>
+                                <a href="#">contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-sm-12" style="text-align: left">
+                        <h4>contact us</h4>
+                        <ul class="contact">
+                            <li>
+                                <i class="fa fa-map-marker"></i>
+                                <span>29 Land St, Lorem City, CA</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                <span>+00 123 4567</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"></i>
+                                <span>info@starhotel.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="container cont13">
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12">
+                        <p>
+                            © 2017 CarFair. All rights reserved.
+                            <span>Terms &amp; Condition Privacy Policy</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-3.3.1.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+        <script src="js/jquery.nicescroll.js"></script>
+        <script src="js/pagination.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+        <script src="js/jquery.fittext.js"></script>
+        <script src="js/typed.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script type="text/javascript" src="js/jquery.funnyText.js"></script>
+        <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/inventory.js"></script>
+    </body>
+
+</html>
